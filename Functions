@@ -1,0 +1,28 @@
+
+
+--- a function is a stored program that you can pass perimeter to to return a value --
+-- Create a table --
+-- How to extract the highest price and the lowest price from the data--
+
+	Create table dbo.Customer(
+	ID int,
+	PName varchar(50),
+	PDesc varchar(50),
+	CountryShortName(4),
+	SaleAmount int
+	)
+	
+	---Insert into dbo.Customer table --
+		Insert into dbo.Customer
+		Values 	(1, 'Spaghetti', 'Noodles', KE, 10.5),
+				(2, 'Salt', 'Paper', UK, 11.5),
+				(3, 'Pizza', 'Bread', IT, 8.5),
+				(4, 'Cheese', 'Goat', IR, 12.5),
+				(1, 'Coke', 'Soda', Ger, 14.5),
+				(1, 'Bread', 'Wheat', KE, 13.5),
+				(1, 'Ground', 'Beef', KE, 18.5),
+				
+				
+
+				
+		
