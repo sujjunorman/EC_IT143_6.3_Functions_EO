@@ -1,0 +1,32 @@
+
+
+- ================================================
+-- Template generated from Template Explorer using:
+-- Create Trigger (New Menu).SQL
+--
+-- Use the Specify Values for Template Parameters 
+-- command (Ctrl-Shift-M) to fill in the parameter 
+-- values below.
+--
+-- See additional Create Trigger templates for more
+-- examples of different Trigger statements.
+--Create trigger to manupulate data set--
+
+CREATE TRIGGER [dbo].[History] ON [dbo].[Customer]
+   AFTER INSERT
+AS 
+BEGIN
+	declare @id int;
+	declare @PName varchar (50);
+	declare @PDesc varchar (50);
+	declare @CountryShortName char (5);
+	declare @SaleAmount int
+
+	Select @id =Customerlist.productid from inserted CustomerList;
+	Select @Pname =Customerlist.productPName from inserted CustomerList;
+	Select @PDesc =Customerlist.productDsc from inserted CustomerList;
+	Select @CountryShortName =Customerlist.countryShortName from inserted CustomerList;
+	Select @SaleAmount =Customerlist.SaleAmount from inserted CustomertList;
+
+END
+GO
